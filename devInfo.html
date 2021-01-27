@@ -2,18 +2,36 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">https://github.com/shontzu/IMS-CW/blob/main/toggleImage.html
+    <meta charset="utf-8">
+    <!-- https://github.com/shontzu/IMS-CW/blob/main/toggleImage.html -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>De-Posterize image</title>
     <style>
         body {
-            background-color: #ffefef;
-            padding-left: 200px;
-            padding-right: 200px;
+            background-color: #EEEEEE;
             text-align: center;
         }
 
+        .container{
+            padding-left: 200px;
+            padding-right: 200px;
+        }
+
+        header,
+        footer {
+            margin-top:0;
+            margin-bottom:0;
+            padding:20px;
+            color: white;
+            background-color: #CCBFAF;
+        }
+
+        fieldset {
+            margin-bottom:20px;
+        }
+
         .card {
-            background-color: #fff;
+            background-color: #FCFCFC;
             display: flex;
             align-items: center;
             margin: 20px;
@@ -58,18 +76,37 @@
             display: inline;
         }
 
+        .fa {
+            padding: 12px;
+            margin: 10px;
+            font-size: 15px;
+            height: 20px;
+            width: 20px;
+            text-align: center;
+            border-radius: 50%;
+            border: 2px solid #d66b6b;
+            background: #CCBFAF;
+            color: #d66b6b;
+        }
+
+        .fa:hover {
+            opacity: 0.7;
+            transform: scale(1.1);
+        }
+
         @keyframes fadeOut {
             0% {
                 color: black;
             }
 
             100% {
-                color: rgb(214, 107, 107)
+                color: #d66b6b
             }
         }
 
+
         @media only screen and (max-width: 1000px) {
-            body {
+            .container {
                 padding-left: 0;
                 padding-right: 0;
             }
@@ -93,23 +130,60 @@
 </head>
 
 <body>
-    <h1>We are the developers behind this website</h1>
-    <div class="card">
-        <div class="togglePosterize">
-            <img src="src/JCPosterized.jpg" alt="togglePosterize Back" height=100%>
-            <a href="https://www.linkedin.com/in/ngeojiajun/" target="_blank"><img src="src/JC.jpg" class="img-top" alt="togglePosterize Front" height=100%></a>
+    <header>
+        <h1>This is the Promotional Page | Dummy Header</h1>
+    </header>
+    
+    <div class="container">
+
+        <fieldset style="background-color: rgba(255,255,255,0.2);">  
+            <legend><h1>~ Company information ~</h1></legend> 
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, blanditiis illo! Officiis fuga, rem facilis alias eius suscipit ab reprehenderit voluptatem doloribus quidem sequi asperiores repellat libero. Beatae, esse fugiat?</p>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque nulla tenetur neque maxime, consectetur animi similique praesentium maiores quos numquam!</p>
+            </div>
+        </fieldset>
+
+        <fieldset style="background-color: rgba(255,255,255,0.2);">  
+            <legend><h1>~ We are the developers behind this website ~</h1></legend> 
+            
+            <div class="card">
+                <div class="togglePosterize">
+                    <img src="src/JCPosterized.jpg" alt="togglePosterize Back" height=100%>
+                    <a href="https://www.linkedin.com/in/ngeojiajun/" target="_blank"><img src="src/JC.jpg" class="img-top"
+                        alt="togglePosterize Front" height=100%></a>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto fugit culpa asperiores aliquam error
+                        minima in excepturi odit minus reiciendis!</p>
+                    </div>
+                    <div class="card">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab accusantium tempore aperiam velit quisquam
+                            autem
+                            maiores nam vel reiciendis blanditiis!</p>
+            <div class="togglePosterize">
+                <img src="src/YCPosterized.jpg" alt="togglePosterize Back" height=100%>
+                <a href="https://www.linkedin.com/in/shontzu/" target="_blank"><img src="src/YC.jpg" class="img-top"
+                    alt="togglePosterize Front" height=100%></a>
+                </div>
+            </div>
+        </fieldset>
+            
+        </div> <!-- end container -->
+
+    <footer>
+        <div>
+            <a href="" target="blank" class="fa fa-facebook"></a>
+            <a href="" target="blank" class="fa fa-twitter"></a>
+            <a href="" target="blank" class="fa fa-linkedin"></a>
+            <a href="" target="blank" class="fa fa-instagram"></a>
+            <a href="" target="blank" class="fa fa-github"></a>
         </div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto fugit culpa asperiores aliquam error
-            minima in excepturi odit minus reiciendis!</p>
-    </div>
-    <div class="card">
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab accusantium tempore aperiam velit quisquam autem
-            maiores nam vel reiciendis blanditiis!</p>
-        <div class="togglePosterize">
-            <img src="src/YCPosterized.jpg" alt="togglePosterize Back" height=100%>
-            <a href="https://www.linkedin.com/in/shontzu/"target="_blank"><img src="src/YC.jpg" class="img-top" alt="togglePosterize Front" height=100%></a>
+        <div>
+            &copy;Ngeo Jia Jun | &copy;Yuu Chin Keoy
         </div>
-    </div>
+    </footer>
 </body>
 
 </html>

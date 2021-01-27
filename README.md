@@ -1,3 +1,3 @@
 # IMS-CW
 ### Toggle Image
-https://shontzu.github.io/IMS-CW/toggleImage.html
+https://shontzu.github.io/IMS-CW/devInfo.html

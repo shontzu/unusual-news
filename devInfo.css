@@ -1,49 +1,63 @@
         body {
+            /* background-image: url("");
+            background-attachment: fixed;
+            background-repeat: repeat;
+            background-position: center; */
             background-color: #EEEEEE;
             text-align: center;
-            font-size:15px;
+            font-size: 15px;
         }
-
-        .container{
+        
+        .container {
             padding-left: 200px;
             padding-right: 200px;
         }
-
+        
         header,
         footer {
-            margin-top:0;
-            margin-bottom:0;
-            padding:20px;
+            margin-top: 0;
+            margin-bottom: 0;
+            padding: 20px;
             color: white;
-            background-color: #CCBFAF;
+            background-color: #ccbfaf;
         }
         
-        h1, h2, h3 {
-        	font-family:Yusei Magic, sans-serif;
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-evenly;
         }
-
+        
+        h1,
+        h2,
+        h3 {
+            font-family: Yusei Magic, sans-serif;
+        }
+        
         fieldset {
-            margin-bottom:20px;
+            margin-bottom: 20px;
             box-shadow: 2px 2px 5px gray;
-            background-color: rgba(255,255,255,0.2);
-            border:none;
+            background-color: rgba(255, 255, 255, 0.5);
+            border: none;
         }
-
+        
         .card {
-            background-color: #FCFCFC;
+            background-color: rgba(252, 252, 252, 0.5);
             display: flex;
             align-items: center;
             margin: 20px;
-            padding:10px;
+            padding: 10px;
             box-shadow: inset 2px 2px 5px gray;
             border-radius: 50px;
         }
-
+        
         .card>h3:hover {
             animation: fadeOut ease 0.5s;
             animation-fill-mode: forwards;
         }
-
+        
         .card>img {
             width: auto;
             height: 200px;
@@ -53,9 +67,9 @@
             display: flex;
             align-self: center;
             margin: auto;
-        	border-radius:50%;
+            border-radius: 50%;
         }
-
+        
         .fa {
             padding: 12px;
             margin: 10px;
@@ -68,62 +82,150 @@
             background: #CCBFAF;
             color: #d66b6b;
         }
-
+        
         .fa:hover {
             opacity: 0.7;
             transform: scale(1.1);
         }
         
         .tagline::before {
-        	height:20px;
-	        content: " ";
-	        animation: typewrite 6s infinite;
-	        animation-direction: alternate-reverse;
+            height: 20px;
+            content: " ";
+            animation: typewrite 6s infinite;
+            animation-direction: alternate-reverse;
+        }
+        
+        #object1 {
+            position: fixed;
+            left: 1%;
+            top: 27%;
+            width: 180px;
+            height: 60px;
+        }
+        
+        #object2 {
+            position: fixed;
+            left: 3%;
+            top: 23%;
+            width: 100px;
+            height: 150px;
+        }
+        
+        #object3 {
+            position: fixed;
+            left: 5%;
+            top: 35%;
+            width: 100px;
+        }
+        
+        #object4 {
+            position: fixed;
+            Right: 1%;
+            top: 62%;
+            width: 180px;
+            height: 60px;
+        }
+        
+        #object5 {
+            position: fixed;
+            Right: 5%;
+            top: 60%;
+            width: 100px;
+            height: 150px;
+        }
+        
+        #object6 {
+            position: fixed;
+            Right: 7%;
+            top: 67%;
+            width: 100px;
+            height: 70px;
         }
         
         @keyframes typewrite {
-        	0% {content: "| ";}
-        	10%{content: "This";}
-        	12%{content: "This |";}
-        	20%{content: "This is ";}
-        	22%{content: "This is |";}
-        	30%{content: "This is th";}
-        	33%{content: "This is the|";}
-        	35%{content: "This is the |";}	
-        	40%{content: "This is the Com|";}
-        	42%{content: "This is the Company";}
-        	45%{content: "This is the Company|";}
-        	47%{content: "This is the Company Ta|";}
-        	50%{content: "This is the Company Tagline";}
-        	100%{content: "This is the Company Tagline";}
+            0% {
+                content: "| ";
+            }
+            10% {
+                content: "This";
+            }
+            12% {
+                content: "This |";
+            }
+            20% {
+                content: "This is ";
+            }
+            22% {
+                content: "This is |";
+            }
+            30% {
+                content: "This is th";
+            }
+            33% {
+                content: "This is the|";
+            }
+            35% {
+                content: "This is the |";
+            }
+            40% {
+                content: "This is the Com|";
+            }
+            42% {
+                content: "This is the Company";
+            }
+            45% {
+                content: "This is the Company |";
+            }
+            47% {
+                content: "This is the Company Ta|";
+            }
+            50% {
+                content: "This is the Company Tagline";
+            }
+            100% {
+                content: "This is the Company Tagline";
+            }
         }
-
+        
         @keyframes fadeOut {
-            0% {color: black;}
-            100% {color: #d66b6b;}
+            0% {
+                color: black;
+            }
+            100% {
+                color: #d66b6b;
+            }
         }
-
-
+        
         @media only screen and (max-width: 1000px) {
             .container {
                 padding-left: 0;
-                padding-right: 0;
             }
-
             img {
-                transform:scale(0.999);
+                transform: scale(0.999);
+            }
+            #object1,
+            #object2,
+            #object3 {
+                display: none;
             }
         }
-
-        @media only screen and (max-width: 600px) {
+        
+        @media only screen and (max-width: 700px) {
             * {
-            margin:0;
-            padding:0;
+                margin: 0;
+                padding: 0;
+            }
+            .container {
+                padding-right: 0;
             }
             img {
-                transform:scale(0.988);
-            }  
-            
+                transform: scale(0.988);
+            }
+            #object4,
+            #object5,
+            #object6 {
+                display: none;
+            }
             .card>p {
                 font-size: 20px;
             }

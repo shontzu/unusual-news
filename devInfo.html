@@ -5,128 +5,9 @@
     <meta charset="utf-8">
     <!-- https://github.com/shontzu/IMS-CW/blob/main/toggleImage.html -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="devInfo.css">
     <title>About Us</title>
-    <style>
-        body {
-            background-color: #EEEEEE;
-            text-align: center;
-        }
-
-        .container{
-            padding-left: 200px;
-            padding-right: 200px;
-        }
-
-        header,
-        footer {
-            margin-top:0;
-            margin-bottom:0;
-            padding:20px;
-            color: white;
-            background-color: #CCBFAF;
-        }
-
-        fieldset {
-            margin-bottom:20px;
-        }
-
-        .card {
-            background-color: #FCFCFC;
-            display: flex;
-            align-items: center;
-            margin: 20px;
-            box-shadow: 5px 5px 10px gray;
-            border-radius: 50px;
-        }
-
-        .card>p {
-            font-size: 25px;
-            font-family: Franklin Gothic medium;
-            padding: 20px;
-        }
-
-        .card>p:hover {
-            animation: fadeOut ease 0.5s;
-            animation-fill-mode: forwards;
-        }
-
-        .togglePosterize {
-            width: auto;
-            height: 300px;
-            position: relative;
-            display: inline-block;
-            margin: auto;
-            display: flex;
-            align-self: center;
-        }
-
-        .togglePosterize>img {
-            margin: auto;
-        }
-
-        .togglePosterize .img-top {
-            display: none;
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 99;
-        }
-
-        .togglePosterize:hover .img-top {
-            display: inline;
-        }
-
-        .fa {
-            padding: 12px;
-            margin: 10px;
-            font-size: 15px;
-            height: 20px;
-            width: 20px;
-            text-align: center;
-            border-radius: 50%;
-            border: 2px solid #d66b6b;
-            background: #CCBFAF;
-            color: #d66b6b;
-        }
-
-        .fa:hover {
-            opacity: 0.7;
-            transform: scale(1.1);
-        }
-
-        @keyframes fadeOut {
-            0% {
-                color: black;
-            }
-
-            100% {
-                color: #d66b6b
-            }
-        }
-
-
-        @media only screen and (max-width: 1000px) {
-            .container {
-                padding-left: 0;
-                padding-right: 0;
-            }
-
-            img {
-                height: 80%;
-                width: auto;
-            }
-        }
-
-        @media only screen and (max-width: 600px) {
-            img {
-                height: 50%;
-            }
-
-            .card>p {
-                font-size: 20px;
-            }
-        }
-    </style>
 </head>
 
 <body>
@@ -136,38 +17,27 @@
     
     <div class="container">
 
-        <fieldset style="background-color: rgba(255,255,255,0.2);">  
+        <fieldset>  
             <legend><h1>~ Company information ~</h1></legend> 
-            <div>
+            	<h2 class="tagline"></h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, blanditiis illo! Officiis fuga, rem facilis alias eius suscipit ab reprehenderit voluptatem doloribus quidem sequi asperiores repellat libero. Beatae, esse fugiat?</p>
-            </div>
-            <div>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque nulla tenetur neque maxime, consectetur animi similique praesentium maiores quos numquam!</p>
-            </div>
         </fieldset>
 
-        <fieldset style="background-color: rgba(255,255,255,0.2);">  
+        <fieldset>  
             <legend><h1>~ We are the developers behind this website ~</h1></legend> 
             
             <div class="card">
-                <div class="togglePosterize">
-                    <img src="src/JCPosterized.jpg" alt="togglePosterize Back" height=100%>
-                    <a href="https://www.linkedin.com/in/ngeojiajun/" target="_blank"><img src="src/JC.jpg" class="img-top"
-                        alt="togglePosterize Front" height=100%></a>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto fugit culpa asperiores aliquam error
-                        minima in excepturi odit minus reiciendis!</p>
-                    </div>
-                    <div class="card">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab accusantium tempore aperiam velit quisquam
-                            autem
-                            maiores nam vel reiciendis blanditiis!</p>
-            <div class="togglePosterize">
-                <img src="src/YCPosterized.jpg" alt="togglePosterize Back" height=100%>
-                <a href="https://www.linkedin.com/in/shontzu/" target="_blank"><img src="src/YC.jpg" class="img-top"
-                    alt="togglePosterize Front" height=100%></a>
-                </div>
+                <img src="src/JC.jpg" alt="Photo of Jia Jun" height=90%>
+				<h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto fugit culpa asperiores aliquam error minima in excepturi odit minus reiciendis!</h3>
+           </div>
+           
+           <div class="card">
+				<h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab accusantium tempore aperiam velit quisquam autem maiores nam vel reiciendis blanditiis!</h3>
+				<img src="src/YC.jpg" alt="Photo of Shon Tzu" height=90%>
             </div>
+            
+            
         </fieldset>
             
         </div> <!-- end container -->
@@ -181,7 +51,7 @@
             <a href="" target="blank" class="fa fa-github"></a>
         </div>
         <div>
-            <p>&copy;Ngeo Jia Jun | &copy;Yuu Chin Keoy</p>
+            <p>&copy;Ngeo Jia Jun | &copy;Keoy Shon Tzu</p>
             <p> Lorem ipsum dolor sit amet | Lorem ipsum dolor sit amet consectetur | Lorem ipsum dolor sit.</p>
         </div>
     </footer>

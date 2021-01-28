@@ -8,9 +8,10 @@
 
 ### Secondary
 - concept: "Slide to Unlock" animation for developers bio. Change div content after "unlock"
+- css-animated SVGs floating at the sides of webpage (hot air balloon / cloud / etc). Absolute positioning.
 
 ### Side note
-! only the Promotional page is developed with css. Other pages use bootstrap.
+! only the Promotional page to be developed with css. Other pages use bootstrap.
 
 ### Preview
 https://shontzu.github.io/IMS-CW/devInfo.html

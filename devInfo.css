@@ -3,9 +3,11 @@
             background-attachment: fixed;
             background-repeat: repeat;
             background-position: center; */
-            background-color: #EEEEEE;
+            /* background-color: #EEEEEE; */
+            font-family:'Merriweather Sans', sans-serif;
+            background-color: silver;
             text-align: center;
-            font-size: 15px;
+            font-size: 20px;
         }
         
         .container {
@@ -15,11 +17,9 @@
         
         header,
         footer {
-            margin-top: 0;
-            margin-bottom: 0;
             padding: 20px;
             color: white;
-            background-color: #ccbfaf;
+            background-color: navy;
         }
         
         ul {
@@ -30,17 +30,33 @@
             justify-content: space-evenly;
         }
         
+        a{
+            color:skyblue; 
+        }
+        
+        a:hover{
+            color:white;      
+        }
+
         h1,
         h2,
         h3 {
-            font-family: Yusei Magic, sans-serif;
+            font-family: 'Lora', serif;
         }
         
         fieldset {
-            margin-bottom: 20px;
+            margin-top:30px;
+            margin-bottom:30px;
             box-shadow: 2px 2px 5px gray;
             background-color: rgba(255, 255, 255, 0.5);
             border: none;
+        }
+        
+        legend {
+            color:navy; 
+            width:90%;
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(220, 220, 220, 0.5));
+            transform:rotate(2deg);
         }
         
         .card {
@@ -70,6 +86,20 @@
             border-radius: 50%;
         }
         
+        .quote{
+            /* background-color:#ccbfaf; */
+            /* background-image: url("src/vino-li-55nuS2rUYmQ-unsplash.jpg");
+            background-attachment: fixed;             */
+            box-shadow: inset 2px 2px 5px gray;
+            color:white;
+            height:200px;
+            width:100%;
+            display:flex;
+            align-items:center;
+            justify-content: center;
+            font-size:40px;
+        }
+        
         .fa {
             padding: 12px;
             margin: 10px;
@@ -78,14 +108,16 @@
             width: 20px;
             text-align: center;
             border-radius: 50%;
-            border: 2px solid #d66b6b;
-            background: #CCBFAF;
-            color: #d66b6b;
+            border: 2px solid skyblue;
+            background: silver;
+            color: navy;
+            box-shadow:  2px 2px 5px black;
         }
         
         .fa:hover {
             opacity: 0.7;
             transform: scale(1.1);
+            box-shadow: inset 2px 2px 5px gray;
         }
         
         .tagline::before {
@@ -199,13 +231,17 @@
         @media only screen and (max-width: 1000px) {
             .container {
                 padding-left: 0;
+                padding-right: 0;
             }
             img {
                 transform: scale(0.999);
             }
             #object1,
             #object2,
-            #object3 {
+            #object3,
+            #object4,
+            #object5,
+            #object6  {
                 display: none;
             }
         }
@@ -215,17 +251,11 @@
                 margin: 0;
                 padding: 0;
             }
-            .container {
-                padding-right: 0;
-            }
+
             img {
                 transform: scale(0.988);
             }
-            #object4,
-            #object5,
-            #object6 {
-                display: none;
-            }
+
             .card>p {
                 font-size: 20px;
             }

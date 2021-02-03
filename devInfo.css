@@ -228,9 +228,16 @@
                 padding-left: 0;
                 padding-right: 0;
             }
+
             img {
                 transform: scale(0.999);
             }
+
+            #logo {
+                display:none;
+            }
+
+            
             #object1,
             #object2,
             #object3,

@@ -122,7 +122,7 @@
             animation-direction: alternate-reverse;
         }
         
-        #object1 {
+        /* #object1 {
             position: fixed;
             left: 1%;
             top: 27%;
@@ -168,7 +168,7 @@
             width: 100px;
             height: 70px;
         }
-        
+         */
         @keyframes typewrite {
             0% {
                 content: "| ";

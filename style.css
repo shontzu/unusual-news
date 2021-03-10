@@ -1,0 +1,198 @@
+header,footer {
+    padding: 20px;
+    color: white;
+    background-color: navy;
+    text-align: center;
+}
+
+body {
+    font-family:'Merriweather Sans', sans-serif;
+    text-align: justify;
+    font-size: 20px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+a{
+    color:skyblue; 
+}
+
+a:hover{
+    color:white;      
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Lora', serif;
+    text-align: center;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+fieldset {
+    margin-top:30px;
+    margin-bottom:30px;
+    box-shadow: 2px 2px 5px gray;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+}
+
+legend {
+    color:navy; 
+    width:90%;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(220, 220, 220, 0.5));
+    transform:rotate(2deg);
+    text-align: center;
+}
+
+.card {
+    background-color: rgba(252, 252, 252, 0.5);
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    padding: 10px;
+    box-shadow: inset 2px 2px 5px gray;
+    border-radius: 50px;
+}
+
+.card>h3:hover {
+    animation: fadeOut ease 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.card>img {
+    width: auto;
+    height: 200px;
+    position: relative;
+    display: inline-block;
+    margin: auto;
+    display: flex;
+    align-self: center;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.fa {
+    padding: 12px;
+    margin: 10px;
+    font-size: 15px;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    border-radius: 50%;
+    border: 2px solid skyblue;
+    background: silver;
+    color: navy;
+    box-shadow:  2px 2px 5px black;
+}
+
+.fa:hover {
+    opacity: 0.7;
+    transform: scale(1.1);
+    box-shadow: inset 2px 2px 5px gray;
+}
+
+article {
+    padding: 5%;
+    margin: 5%;
+    box-shadow: 2px 2px 2px gray;
+    border: 1px solid silver;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tagline::before {
+    height: 20px;
+    content: " ";
+    animation: typewrite 6s infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes typewrite {
+    0% {
+        content: "| ";
+    }
+    10% {
+        content: "This";
+    }
+    12% {
+        content: "This |";
+    }
+    20% {
+        content: "This is ";
+    }
+    22% {
+        content: "This is |";
+    }
+    30% {
+        content: "This is th";
+    }
+    33% {
+        content: "This is the|";
+    }
+    35% {
+        content: "This is the |";
+    }
+    40% {
+        content: "This is the Com|";
+    }
+    42% {
+        content: "This is the Company";
+    }
+    45% {
+        content: "This is the Company |";
+    }
+    47% {
+        content: "This is the Company Ta|";
+    }
+    50% {
+        content: "This is the Company Tagline";
+    }
+    100% {
+        content: "This is the Company Tagline";
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        color: black;
+    }
+    100% {
+        color: #d66b6b;
+    }
+}
+
+/* For mobile phones: */
+@media only screen and (max-width: 700px) {
+    #logo {
+        display:none;
+    }
+}
+
+/* For tablets */
+@media only screen and (min-width: 701px) and (max-width: 1000px) {
+    article {
+        margin-left:15%;
+        margin-right:15%;
+    }
+}
+
+/* For laptop/desktop: */
+@media only screen and (min-width: 1001px){
+    article {
+        margin-left:20%;
+        margin-right:20%;
+    }
+}

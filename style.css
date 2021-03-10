@@ -1,14 +1,13 @@
 header,footer {
     padding: 20px;
     color: white;
-    background-color: navy;
+    background-color: #042C71;
     text-align: center;
 }
 
-header {
+header, .article-details {
     display:flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 body {
@@ -16,6 +15,7 @@ body {
     font-family:'Merriweather Sans', sans-serif;
     text-align: justify;
     font-size: 20px;
+    background-color: #EBEDF3;
 }
 
 ul {
@@ -32,7 +32,7 @@ a{
 }
 
 a:hover{
-    color:white;      
+    color:#F8D605;      
 }
 
 h1,
@@ -177,7 +177,7 @@ article {
         color: black;
     }
     100% {
-        color: #d66b6b;
+        color: #0B6AB0;
     }
 }
 

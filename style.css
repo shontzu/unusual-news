@@ -1,11 +1,14 @@
 header,footer {
-    padding: 20px;
+    padding: 10px;
     color: white;
     background-color: #042C71;
     text-align: center;
 }
 
-header, .article-details {
+header {
+    position:sticky;
+    top:0;
+    z-index:1000;
     display:flex;
     justify-content: space-between;
 }
@@ -70,7 +73,7 @@ legend {
     border-radius: 50px;
 }
 
-.card>h3:hover {
+.card>p:hover {
     animation: fadeOut ease 0.5s;
     animation-fill-mode: forwards;
 }
@@ -111,7 +114,10 @@ article {
     box-shadow: 2px 2px 2px gray;
     border: 1px solid silver;
 }
-
+.article-details{
+    display:flex;
+    justify-content: space-between;
+}
 .card {
     display: flex;
     justify-content: space-between;
@@ -130,43 +136,43 @@ article {
         content: "| ";
     }
     10% {
-        content: "This";
+        content: "Cu|";
     }
     12% {
-        content: "This |";
+        content: "Curio|";
     }
     20% {
-        content: "This is ";
+        content: "curios|";
     }
     22% {
-        content: "This is |";
+        content: "Curiosity |";
     }
     30% {
-        content: "This is th";
+        content: "Curiosity h|";
     }
     33% {
-        content: "This is the|";
+        content: "Curiosity has |";
     }
     35% {
-        content: "This is the |";
+        content: "Curiosity has n|";
     }
     40% {
-        content: "This is the Com|";
+        content: "Curiosity has no |";
     }
     42% {
-        content: "This is the Company";
+        content: "Curiosity has no li|";
     }
     45% {
-        content: "This is the Company |";
+        content: "Curiosity has no limit|";
     }
     47% {
-        content: "This is the Company Ta|";
+        content: "Curiosity has no limit !|";
     }
     50% {
-        content: "This is the Company Tagline";
+        content: "Curiosity has no limit !!";
     }
     100% {
-        content: "This is the Company Tagline";
+        content: "Curiosity has no limit !!";
     }
 }
 
